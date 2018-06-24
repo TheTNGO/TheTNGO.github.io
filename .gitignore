@@ -1,0 +1,8 @@
+.classpath
+.gradle
+.settings/
+.project
+bin/
+outline-general
+outline-content
+outline-sketch.png
