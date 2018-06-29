@@ -15,6 +15,11 @@ img.project-screenshot {
     width: 320px;
 }
 
+ul{
+    list-style-type: none;
+}
+
+
 /* Top Nav Bar */
 
 #main-nav{
@@ -30,7 +35,7 @@ img.project-screenshot {
     text-align: right;
     
     border-bottom: 2px solid;
-    
+
     background: rgb(255,255,255); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(255,255,255,1) 47%, rgba(255,255,255,1) 62%, rgba(255,255,255,1) 90%, rgba(255,0,0,1) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(255,255,255,1) 47%,rgba(255,255,255,1) 62%,rgba(255,255,255,1) 90%,rgba(255,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -64,5 +69,61 @@ header{
     padding-top: 5rem;
     text-align: center;
 }
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+main > *{
+    margin: 5rem 10rem;
+
+}
+
+
+/* About Me Styles */
+
+/* Blurb */
+
+
+#about-me-blurb p{
+    margin: 2rem;
+}
+
+#about-me-blurb h2{
+    text-align: center;
+}
+
+/* Tech Stack */
+
+.tech-stack{
+    align-content: center;
+}
+
+.tech-stack h2{
+    text-align: center
+}
+
+.tech-stack-contents{
+    
+    display: grid;
+    grid-template-columns: 350px 350px;
+    
+    width: 700px;
+    margin: 2rem auto;    
+    
+}
+
+.tech-stack-wrapper{
+    text-align: center;
+}
+
+.tech-stack-wrapper li{
+    padding: 0.25rem;
+}
+
+
+
+
 
 
