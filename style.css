@@ -20,6 +20,20 @@ ul{
 }
 
 
+header{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.container{
+    display: grid;
+}
+
+main > *{
+    margin: 3rem 15rem;
+
+}
+
 /* Top Nav Bar */
 
 #main-nav{
@@ -65,22 +79,6 @@ nav a{
 /* End Nav */
 
 
-header{
-    padding-top: 5rem;
-    text-align: center;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
-}
-
-main > *{
-    margin: 5rem 10rem;
-
-}
-
-
 /* About Me Styles */
 
 /* Blurb */
@@ -121,6 +119,65 @@ main > *{
 .tech-stack-wrapper li{
     padding: 0.25rem;
 }
+
+/* About Me End */
+
+
+/* Projects */
+
+#projects{
+    display: grid;
+    grid-template-rows: 50px 350px 350px 350px; 
+}
+
+#projects article{
+    max-block-size: 750px;
+}
+
+#projects h2{
+    text-align: center;
+}
+
+.project-details{
+    display: grid;
+    
+    margin: 10px;
+    
+    grid-template-columns: 350px 750px;
+    grid-template-rows: 250px;
+}
+
+#projects p{
+    padding: 0.5rem;
+}
+
+#projects h3{
+    padding: 0.5rem;
+}
+
+#projects h4{
+    padding: 0.5rem;
+
+
+}
+
+.git-repo-link{
+    padding: 0.5rem;
+}
+
+/* End Project Styles */
+
+
+/* Contact Styles */
+
+#contact{
+
+    display: grid;
+    grid-template-columns: 400px 400px;
+
+
+}
+
 
 
 
