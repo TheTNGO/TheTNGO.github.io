@@ -78,10 +78,17 @@ nav a{
 
 /* End Nav */
 
+/* Title */
+
 
 /* About Me Styles */
 
 /* Blurb */
+
+img.headshot {
+    height: 154px;
+    width: 194px;
+}
 
 
 #about-me-blurb p{
