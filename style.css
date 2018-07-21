@@ -26,27 +26,37 @@ header{
 }
 
 .container{
-    display: grid;
+    /* display: grid; */
 }
 
-main > *{
+/* main > *{
     margin: 3rem 15rem;
 
-}
+} */
 
 /* Top Nav Bar */
 
-#main-nav{
-	position: fixed;
+#navContainer{
+    display: grid;
+
+    position: fixed;
 	top: 0;
-	left: 0;
+	
 
 	width: 100%;
+   
+}
+
+#main-nav{
+    display: flex;
+    justify-content: space-between;
+    
+
 
 	background: white;
 	color: var(--dark-red);
-
-    text-align: right;
+/* 
+    text-align: right; */
     
     border-bottom: 2px solid;
 
@@ -58,23 +68,40 @@ main > *{
 
 }
 
+#main-nav div{
+    padding: 0.9rem 1rem;   
+}
+
 /* Adjust both at the same time when necessary */
 
+#navToggleContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    
+}
+
+#navToggleButton{
+    margin-right: 10px;
+}
+
+
+
 #nav-name{
-    position: fixed;
-    top: 0;
-    left: 0;
-    text-align: left;
-    padding: 0.9rem 1rem;
+
+    flex-grow: 2;
+    
+
+    /* position: fixed;
+    : 0;
+    left: 0; */
+    
+    /* padding: 0.9rem 1rem; */
 }
 
-nav a{
-	
-	text-decoration: none;
-
-	display:inline-block;
+/* nav a{
 	padding: 0.9rem 1rem;
-}
+} */
 
 /* End Nav */
 
