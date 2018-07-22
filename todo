@@ -1,0 +1,10 @@
+- Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)
+*DONE* - Add a button in your navigation that will toggle the visibility of your actual site navigation.
+- Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
+- Create a modal box that pops up with your bio information whenever a button or link is pressed
+
+
+In spare time:
+    - Make everything way prettier than it is now!!!
+    - Figure out why console sees .projectDescriptionContainer.style.display as "" initially instead of "none"
+    - figure out how to make it so I'm not limited to 10 projects because of the if/else JQuery ID Selectors

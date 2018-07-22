@@ -38,9 +38,9 @@
 
 		</div>
 
-		
+
 		<header id="title">
-			<img src="./images/headshot.png" id="headshot" height="154px" width="194px">
+			<img src="./images/headshot.png" id="headshot">
 			<h1 id="title-name">I'm Thomas</h1>
 			<p class="subtitle" id="title-subtitle">Your friendly, Columbus, OH based full-stack developer.</p>
 		</header>
@@ -102,6 +102,7 @@
 
 
 			<section id="projects">
+
 				<h2 class="heading">Projects</h2>
 
 				<article class="project-details" class="fortune-teller">
@@ -110,18 +111,21 @@
 						<h3 class="heading">
 							Fortune Teller:
 						</h3>
-						<h4>What's it about?:</h4>
-						<p class="project-description">
-							Designed to tell a user’s fortune as a string using variable outcomes based on typed user input in a variety of topics.
-						</p>
-						<h4>Technologies used:</h4>
-						<p class="project-description" class="project-tech-stack">
-							Java 8
-						</p>
+						<div class="projectDescriptionContainers" id="projDescCon0">
+							<h4>What's it about?:</h4>
+							<p class="descriptionContent">
+								Designed to tell a user’s fortune as a string using variable outcomes based on typed user input in a variety of topics.
+							</p>
+							<h4>Technologies used:</h4>
+							<p class="project-tech-stack">
+								Java 8
+							</p>
+						</div>
 						<div class="git-repo-link" id="fortune-teller-repo">
 							<a href="https://github.com/TheTNGO/FortuneTeller">
 								<img src="./images/GitHub-Mark-32px.png"> Check it out on GitHub!</a>
 						</div>
+						<button class="projectDescriptionToggle">Full Description</button>
 					</div>
 				</article>
 
@@ -131,21 +135,24 @@
 						<h3 class="heading">
 							Virtual Pets Amok:
 						</h3>
-						<h4>What's it about?:</h4>
-						<p class="project-description">
-							Allows the end-user to take care of multiple “Pet” objects (all at once or individually), while being able to create and
-							remove their own “Pet” instances consisting of "robotic" and "organic" cats and dogs, each with their own properties
-							and needs. Utilizes extensive use of class inheritance and interface implementation to create a varied "shelter" to
-							care for..
-						</p>
-						<h4>Technologies used:</h4>
-						<p class="project-description" class="project-tech-stack">
-							Java 8
-						</p>
+						<div class="projectDescriptionContainers" id="projDescCon1">
+							<h4>What's it about?:</h4>
+							<p class="projectWhatAbout">
+								Allows the end-user to take care of multiple “Pet” objects (all at once or individually), while being able to create and
+								remove their own “Pet” instances consisting of "robotic" and "organic" cats and dogs, each with their own properties
+								and needs. Utilizes extensive use of class inheritance and interface implementation to create a varied "shelter"
+								to care for..
+							</p>
+							<h4>Technologies used:</h4>
+							<p class="project-tech-stack">
+								Java 8
+							</p>
+						</div>
 						<div class="git-repo-link" id="virtual-pets-amok-repo">
 							<a href="https://github.com/TheTNGO/virtual-pets-amok">
 								<img src="./images/GitHub-Mark-32px.png"> Check it out on GitHub!</a>
 						</div>
+						<button class="projectDescriptionToggle">Full Description</button>
 					</div>
 
 				</article>
@@ -156,20 +163,23 @@
 						<h3 class="heading">
 							Reviews Web Site:
 						</h3>
-						<h4>What's it about?:</h4>
-						<p class="project-description">
-							A basic web site designed to display sample reviews, displaying information such as the date the review was written, an arbritrary
-							ID number, and a visual image-based recommendation bound to each review. Utilizes Spring MVC and Thymeleaf templates
-							to display information housed in Java-based, TDD-built back-end logic.
-						</p>
-						<h4>Technologies used:</h4>
-						<p class="project-description" class="project-tech-stack">
-							Java 8, Spring MVC, Thymeleaf
-						</p>
+						<div class="projectDescriptionContainers" id="projDescCon2">
+							<h4>What's it about?:</h4>
+							<p class="descriptionContent">
+								A basic web site designed to display sample reviews, displaying information such as the date the review was written, an arbritrary
+								ID number, and a visual image-based recommendation bound to each review. Utilizes Spring MVC and Thymeleaf templates
+								to display information housed in Java-based, TDD-built back-end logic.
+							</p>
+							<h4>Technologies used:</h4>
+							<p class="project-tech-stack">
+								Java 8, Spring MVC, Thymeleaf
+							</p>
+						</div>
 						<div class="git-repo-link" id="reviews-repo">
 							<a href="https://github.com/TheTNGO/reviews">
 								<img src="./images/GitHub-Mark-32px.png"> Check it out on GitHub!</a>
 						</div>
+						<button class="projectDescriptionToggle">Full Description</button>
 					</div>
 
 				</article>

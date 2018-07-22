@@ -10,7 +10,14 @@
     background-color: white;
 }
 
+#headshot{
+    border-radius: 5px;
+    height: 154px;
+    width: 194px;
+}
+
 img.project-screenshot {
+    border-radius: 5px;
     height: 240px;
     width: 320px;
 }
@@ -170,6 +177,10 @@ img.headshot {
 
 #projects h2{
     text-align: center;
+}
+
+.projectDescriptionContainers {
+    display: none;
 }
 
 .project-details{
