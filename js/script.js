@@ -109,8 +109,6 @@ $(document).ready(function () {
 
     showSlide();
 
-    // Begin by setting an interval to loop through the images
-    // Store it in a variable to be cleared on user interaction
     rotation = setInterval(function() {
         nextSlide();
     }, 10000);
