@@ -162,34 +162,54 @@ img.headshot {
 /* Projects Carousel */
 
 #projectCarousel{
-    background: black;
+    
     width: 800px;
-    height: 400px;
+    height: 430px;
     margin: 0 auto;
   
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-    grid-template-rows: 330px 70px;
+    grid-template-rows: 330px 100px;
 }
 
 #pCarouselPrev{
-    background: blue;
-    color: white;
+     /* color: white; */
 
     grid-area: 1 / 1 / 3 / 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pCarouselPrev button{
+    font-size: 32px;
+    padding: 5px;
 }
 
 #pCarouselNext {
-    background: green;
-    color: white;
+     /* color: white; */
   
     /* row-start / col-start / row-end / col-end */
     grid-area: 1 / 3 / 3 / 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
+  #pCarouselNext button{
+    font-size: 32px;
+    padding: 5px;
+}
+
+/* Carousel View Container */
+
 #pCarouselView {
-    background: grey;
-    border: 2px solid white;
+    background: black;
+    border: 3px solid red;
 
     /* row-start / col-start / row-end / col-end */
     grid-area: 1 / 2 / 2 / 3;
@@ -197,9 +217,39 @@ img.headshot {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
+
+/* Carousel Image List Container */
+
+#pCarouselImgs {
+    background: black;
+    outline: 3px groove red;
   
+    /* row-start / col-start / row-end / col-end */
+    grid-area: 2 / 2 / 3 / 3;
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  
+    overflow-x: scroll;
+  }
+
+/* Carousel View Image size */
+#pCarouselView img {
+    height: 330px;
+    width: 440px;
+    margin: 10px;
+  }
+
+/* Carousel Image List - Image Sizes */
+#pCarouselImgs img{
+    height: 60px;
+    width: 80px;
+}
 
 
 
@@ -211,7 +261,7 @@ img.headshot {
 
 /* Projects */
 
-.project-details{
+.temp{
     display: none;
 }
 

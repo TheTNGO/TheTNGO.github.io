@@ -1,6 +1,10 @@
 - Add an image carousel. This can be a carousel of screenshots of your projects (perhaps they link to your projects)
+        * Create divs/style rules for components
+        * write JS for function
+
+
 *DONE* - Add a button in your navigation that will toggle the visibility of your actual site navigation.
-- Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
+*DONE* - Add a button and collapsable description to your portfolio projects so when the user clicks the button the descriptions expand and collapse
 - Create a modal box that pops up with your bio information whenever a button or link is pressed
 
 

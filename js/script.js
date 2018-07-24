@@ -29,7 +29,93 @@ $(document).ready(function () {
         })
     }
 
-  
+    /* Project Image Carousel */
+
+    // Image URLs
+    const slides = [
+        'project-fortune-teller-final.jpg',
+        'reviews-final.jpg',
+        'virtual-pets-amok-final.jpg',
+      ];
+
+                    // Index of currently displayed URL
+                    let currentIndex = 0;
+
+                    // Empty until later: a reference to our interval to rotate
+                    // through images... storing it in a variable allows us to
+                    // cancel it whenever we want
+                    let rotation;
+
+    // DOM Components
+    const prev = document.querySelector('#pCarouselPrev');
+    const next = document.querySelector('#pCarouselNext');
+    const view = document.querySelector('#pCarouselView');
+    const imgs = document.querySelector('#pCarouselImgs');
+
+    // Img Rotation Engine
+    for (let i = 0; i < slides.length; i++) {
+
+        // Create the <img> element
+        let imgUrl = slides[i];
+        const img = document.createElement('img');
+        img.setAttribute('src', './images/' + imgUrl);
+        imgs.appendChild(img);
+    
+        // When preview is clicked, display that image
+        img.addEventListener('click', function() {
+          currentIndex = i;
+          showSlide();
+          clearInterval(rotation);
+        });
+      }
+
+                    // Clicking "previous" button displays previous image
+                    prev.addEventListener('click', function() {
+                    prevSlide();
+                    clearInterval(rotation);
+                    });
+
+                    // Clicking "next" button displays next image
+                    next.addEventListener('click', function() {
+                    nextSlide();
+                    clearInterval(rotation);
+                    });
+
+                    // Display slide in view based on value of currentIndex
+                    function showSlide() {
+                    view.innerHTML = '';
+                    const imgUrl = slides[currentIndex];
+                    const img = document.createElement('img');
+                    img.setAttribute('src', './images/' + imgUrl);
+                    view.appendChild(img);
+                    }
+
+                    // Change currentIndex, looping if needed, then show slide
+                    function prevSlide() {
+                    currentIndex--;
+                    if (currentIndex < 0) {
+                        currentIndex = slides.length - 1;
+                    }
+                    showSlide();
+                    }
+
+                    // Change currentIndex, looping if needed, then show slide
+                    function nextSlide() {
+                    currentIndex++;
+                    if (currentIndex === slides.length) {
+                        currentIndex = 0;
+                    }
+                    showSlide();
+                    }
+
+                    // Display the first slide in the carousel
+                    showSlide();
+
+                    // Begin by setting an interval to loop through the images
+                    // Store it in a variable to be cleared on user interaction
+                    rotation = setInterval(function() {
+                    nextSlide();
+                    }, 10000);
     
 
 });
