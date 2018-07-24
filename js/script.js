@@ -34,7 +34,7 @@ $(document).ready(function () {
         // Image URLs
         const slides = [
             'project-fortune-teller-final.jpg',
-            'reviews-final.jpg',
+            'reviews-final.JPG',
             'virtual-pets-amok-final.jpg',
         ];
 
