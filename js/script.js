@@ -90,7 +90,7 @@ $(document).ready(function () {
         view.appendChild(img);
     }
 
-    // Change currentIndex, looping if needed, then show slide
+    
     function prevSlide() {
         currentIndex--;
         if (currentIndex < 0) {
@@ -99,7 +99,6 @@ $(document).ready(function () {
         showSlide();
     }
 
-    // Change currentIndex, looping if needed, then show slide
     function nextSlide() {
         currentIndex++;
         if (currentIndex === slides.length) {
@@ -108,7 +107,6 @@ $(document).ready(function () {
         showSlide();
     }
 
-    // Display the first slide in the carousel
     showSlide();
 
     // Begin by setting an interval to loop through the images
@@ -116,7 +114,38 @@ $(document).ready(function () {
     rotation = setInterval(function() {
         nextSlide();
     }, 10000);
+
+    /* Front End "whatis" modal */
+
+        var frontEndModal = document.getElementById('techStackFrontEndModal');
+        var frontEndAboutBtn = document.getElementById("front-end-modal-button");
+        var frontEndClose = document.getElementById("frontEndClose");
+
+        // Button to activate modal 
+        frontEndAboutBtn.onclick = function() {
+            frontEndModal.style.display = "flex";
+        }
+
+        // Close Button
+        frontEndClose.onclick = function() {
+            frontEndModal.style.display = "none";
+        }
+
+    /* Back End "whatis" modal */
+
+        var backEndModal = document.getElementById('techStackBackEndModal');
+        var backEndAboutBtn = document.getElementById("back-end-modal-button");
+        var backEndClose = document.getElementById("backEndClose");
+
+        // Button to activate modal 
+        backEndAboutBtn.onclick = function() {
+            backEndModal.style.display = "flex";
+        }
+
+        // Close Button
+        backEndClose.onclick = function() {
+            backEndModal.style.display = "none";
+        }    
     
 
 });
-

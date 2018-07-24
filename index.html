@@ -66,12 +66,48 @@
 
 				<section class="tech-stack" id="about-me-tech-stack-section">
 
+					<!--Modal-->
+					<!--TODO: Find way to insert close button for each modal / add one in per modal via JS-->
+
+					<div id="techStackFrontEndModal" class="modalContainer">
+
+						<div id="frontEndModalContent" class="modalContent">
+							<div class="closeContainer">
+								<p id="frontEndClose" class="closeButton">&times;</p>
+							</div>
+							<h2>What's a "Front-End" tech stack?</h2>
+							<p>The software "front-end" is what the end-user sees and interacts with to get a piece of software to do what they want,
+								also referred to as a "user-interface", or a UI. Any time you're browsing your favorite website or running through
+								the menus of your favorite game, you're interacting with the front-end.</p>
+
+						</div>
+
+					</div>
+
+					<div id="techStackBackEndModal" class="modalContainer">
+
+						<div id="backEndModalContent" class="modalContent">
+							<div class="closeContainer">
+								<p id="backEndClose" class="closeButton">&times;</p>
+							</div>
+							<h2>What's a "Back-End" tech stack?
+							</h2>
+							<p>Back-end code boils down to the code that handles anything done behind the scenes. From the simple timing of displaying
+								text, to the complex handling of databases, back-end tech stacks tell software and web sites how they work "under
+								the hood".
+							</p>
+						</div>
+
+					</div>
+
+					<!--End Modal-->
+
 					<h2>Current Tech Stack</h2>
 
 					<div class="tech-stack-contents">
 
 						<div class="tech-stack-wrapper" id="front-end">
-							<!-- Add front-end related pic -->
+							<!-- TODO: Add front-end related pics -->
 							<h3 class="tech-stack-front-end-heading">
 								Front-End:
 							</h3>
@@ -84,7 +120,7 @@
 						</div>
 
 						<div class="tech-stack-wrapper" id="back-end">
-							<!-- Add back-end related pic -->
+							<!-- TODO: Add back-end related pics -->
 							<h3 class="tech-stack-heading">
 								Back-End:
 							</h3>
@@ -93,6 +129,14 @@
 								<li>Spring MVC/Boot</li>
 							</ul>
 						</div>
+
+						<span id="tech-stack-front-end-modal">
+							<button id="front-end-modal-button">What's a Front-End stack?</button>
+						</span>
+
+						<span id="tech-stack-back-end-modal">
+							<button id="back-end-modal-button">What's a Back-End stack?</button>
+						</span>
 
 					</div>
 				</section>
@@ -105,8 +149,7 @@
 
 				<h2 class="heading">Projects</h2>
 
-				<!--Carousel under construction-->
-
+				<!--Carousel-->
 				<div id="projectCarousel">
 					<div id="pCarouselPrev">
 						<button id="pCarouselPrevButton">&lt;</button>
@@ -117,13 +160,9 @@
 					<div id="pCarouselView"></div>
 					<div id="pCarouselImgs"></div>
 				</div>
-
-
-
-
 				<!--End Carousel-->
 
-				<!--To be inserted in Carousel-->
+				<!--TODO: insert in Carousel-->
 
 				<article class="project-details" class="fortune-teller">
 					<img src="images/project-fortune-teller-final.jpg" class="project-screenshot" alt="Fortune Teller">
@@ -241,7 +280,7 @@
 			<span id="copyright">
 				Not-So-&copy Thomas Ngo
 			</span>
-		
+
 		</footer>
 
 

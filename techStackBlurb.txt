@@ -1,0 +1,5 @@
+What's a "Back-End" tech stack?
+Back-end code boils down to the code that handles anything done behind the scenes. From the simple timing of displaying text, to the complex handling of databases, back-end tech stacks tell software and web sites how they work "under the hood". 
+
+What's a "Front-End" tech stack?
+The software "front-end" is what the end-user sees and interacts with to get a piece of software to do what they want, also referred to as a "user-interface", or a UI. Any time you're browsing your favorite website or running through the menus of your favorite game, you're interacting with the front-end.
