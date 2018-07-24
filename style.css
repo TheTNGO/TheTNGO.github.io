@@ -8,6 +8,7 @@
 
 :root{
     background-color: white;
+   
 }
 
 #headshot{
@@ -28,14 +29,16 @@ header{
     text-align: center;
 }
 
-.container{
-    /* display: grid; */
+header > * {
+    margin: 15px;
 }
 
-/* main > *{
-    margin: 3rem 15rem;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-} */
+}
 
 /* Top Nav Bar */
 
@@ -54,12 +57,8 @@ header{
     display: flex;
     justify-content: space-between;
     
-
-
 	background: white;
 	color: var(--dark-red);
-/* 
-    text-align: right; */
     
     border-bottom: 2px solid;
 
@@ -93,18 +92,8 @@ header{
 #nav-name{
 
     flex-grow: 2;
-    
-
-    /* position: fixed;
-    : 0;
-    left: 0; */
-    
-    /* padding: 0.9rem 1rem; */
+ 
 }
-
-/* nav a{
-	padding: 0.9rem 1rem;
-} */
 
 /* End Nav */
 
@@ -165,7 +154,7 @@ img.headshot {
     
     width: 800px;
     height: 430px;
-    margin: 0 auto;
+    margin: 50px auto;
   
     display: grid;
     grid-template-columns: 50px 1fr 50px;
@@ -173,8 +162,6 @@ img.headshot {
 }
 
 #pCarouselPrev{
-     /* color: white; */
-
     grid-area: 1 / 1 / 3 / 2;
 
     display: flex;
@@ -189,7 +176,7 @@ img.headshot {
 }
 
 #pCarouselNext {
-     /* color: white; */
+ 
   
     /* row-start / col-start / row-end / col-end */
     grid-area: 1 / 3 / 3 / 4;
@@ -266,8 +253,11 @@ img.headshot {
 }
 
 #projects{
-    display: grid;
-    grid-template-rows: 50px 350px 350px 350px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 img.project-screenshot {
@@ -291,7 +281,7 @@ img.project-screenshot {
 .project-details{
     display: grid;
     
-    margin: 10px;
+    margin: 50px;
     
     grid-template-columns: 350px 750px;
     grid-template-rows: 250px;
@@ -323,9 +313,23 @@ img.project-screenshot {
 #contact{
 
     display: grid;
-    grid-template-columns: 400px 400px;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 
+}
+
+.contact-content{
+    justify-items: left;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
 }
 
 

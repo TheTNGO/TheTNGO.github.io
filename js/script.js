@@ -47,8 +47,8 @@ $(document).ready(function () {
                     let rotation;
 
     // DOM Components
-    const prev = document.querySelector('#pCarouselPrev');
-    const next = document.querySelector('#pCarouselNext');
+    const prev = document.querySelector('#pCarouselPrevButton');
+    const next = document.querySelector('#pCarouselNextButton');
     const view = document.querySelector('#pCarouselView');
     const imgs = document.querySelector('#pCarouselImgs');
 
@@ -69,53 +69,53 @@ $(document).ready(function () {
         });
       }
 
-                    // Clicking "previous" button displays previous image
-                    prev.addEventListener('click', function() {
-                    prevSlide();
-                    clearInterval(rotation);
-                    });
+    // Previous Button
+    prev.addEventListener('click', function() {
+        prevSlide();
+        clearInterval(rotation);
+    });
 
-                    // Clicking "next" button displays next image
-                    next.addEventListener('click', function() {
-                    nextSlide();
-                    clearInterval(rotation);
-                    });
+    // Next Button
+    next.addEventListener('click', function() {
+        nextSlide();
+        clearInterval(rotation);
+    });
 
-                    // Display slide in view based on value of currentIndex
-                    function showSlide() {
-                    view.innerHTML = '';
-                    const imgUrl = slides[currentIndex];
-                    const img = document.createElement('img');
-                    img.setAttribute('src', './images/' + imgUrl);
-                    view.appendChild(img);
-                    }
+    // Display slide in view based on value of currentIndex
+    function showSlide() {
+        view.innerHTML = '';
+        const imgUrl = slides[currentIndex];
+        const img = document.createElement('img');
+        img.setAttribute('src', './images/' + imgUrl);
+        view.appendChild(img);
+    }
 
-                    // Change currentIndex, looping if needed, then show slide
-                    function prevSlide() {
-                    currentIndex--;
-                    if (currentIndex < 0) {
-                        currentIndex = slides.length - 1;
-                    }
-                    showSlide();
-                    }
+    // Change currentIndex, looping if needed, then show slide
+    function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+            currentIndex = slides.length - 1;
+        }
+        showSlide();
+    }
 
-                    // Change currentIndex, looping if needed, then show slide
-                    function nextSlide() {
-                    currentIndex++;
-                    if (currentIndex === slides.length) {
-                        currentIndex = 0;
-                    }
-                    showSlide();
-                    }
+    // Change currentIndex, looping if needed, then show slide
+    function nextSlide() {
+        currentIndex++;
+        if (currentIndex === slides.length) {
+            currentIndex = 0;
+        }
+        showSlide();
+    }
 
-                    // Display the first slide in the carousel
-                    showSlide();
+    // Display the first slide in the carousel
+    showSlide();
 
-                    // Begin by setting an interval to loop through the images
-                    // Store it in a variable to be cleared on user interaction
-                    rotation = setInterval(function() {
-                    nextSlide();
-                    }, 10000);
+    // Begin by setting an interval to loop through the images
+    // Store it in a variable to be cleared on user interaction
+    rotation = setInterval(function() {
+        nextSlide();
+    }, 10000);
     
 
 });
