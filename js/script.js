@@ -31,87 +31,87 @@ $(document).ready(function () {
 
     /* Project Image Carousel */
 
-    // Image URLs
-    const slides = [
-        'project-fortune-teller-final.jpg',
-        'reviews-final.jpg',
-        'virtual-pets-amok-final.jpg',
-      ];
+        // Image URLs
+        const slides = [
+            'project-fortune-teller-final.jpg',
+            'reviews-final.jpg',
+            'virtual-pets-amok-final.jpg',
+        ];
 
-                    // Index of currently displayed URL
-                    let currentIndex = 0;
+        // Index of currently displayed URL
+        let currentIndex = 0;
 
-                    // Empty until later: a reference to our interval to rotate
-                    // through images... storing it in a variable allows us to
-                    // cancel it whenever we want
-                    let rotation;
+        // Empty until later: a reference to our interval to rotate
+        // through images... storing it in a variable allows us to
+        // cancel it whenever we want
+        let rotation;
 
-    // DOM Components
-    const prev = document.querySelector('#pCarouselPrevButton');
-    const next = document.querySelector('#pCarouselNextButton');
-    const view = document.querySelector('#pCarouselView');
-    const imgs = document.querySelector('#pCarouselImgs');
+        // DOM Components
+        const prev = document.querySelector('#pCarouselPrevButton');
+        const next = document.querySelector('#pCarouselNextButton');
+        const view = document.querySelector('#pCarouselView');
+        const imgs = document.querySelector('#pCarouselImgs');
 
-    // Img Rotation Engine
-    for (let i = 0; i < slides.length; i++) {
+        // Img Rotation Engine
+        for (let i = 0; i < slides.length; i++) {
 
-        // Create the <img> element
-        let imgUrl = slides[i];
-        const img = document.createElement('img');
-        img.setAttribute('src', './images/' + imgUrl);
-        imgs.appendChild(img);
-    
-        // When preview is clicked, display that image
-        img.addEventListener('click', function() {
-          currentIndex = i;
-          showSlide();
-          clearInterval(rotation);
+            // Create the <img> element
+            let imgUrl = slides[i];
+            const img = document.createElement('img');
+            img.setAttribute('src', './images/' + imgUrl);
+            imgs.appendChild(img);
+        
+            // When preview is clicked, display that image
+            img.addEventListener('click', function() {
+            currentIndex = i;
+            showSlide();
+            clearInterval(rotation);
+            });
+        }
+
+        // Previous Button
+        prev.addEventListener('click', function() {
+            prevSlide();
+            clearInterval(rotation);
         });
-      }
 
-    // Previous Button
-    prev.addEventListener('click', function() {
-        prevSlide();
-        clearInterval(rotation);
-    });
+        // Next Button
+        next.addEventListener('click', function() {
+            nextSlide();
+            clearInterval(rotation);
+        });
 
-    // Next Button
-    next.addEventListener('click', function() {
-        nextSlide();
-        clearInterval(rotation);
-    });
-
-    // Display slide in view based on value of currentIndex
-    function showSlide() {
-        view.innerHTML = '';
-        const imgUrl = slides[currentIndex];
-        const img = document.createElement('img');
-        img.setAttribute('src', './images/' + imgUrl);
-        view.appendChild(img);
-    }
-
-    
-    function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-            currentIndex = slides.length - 1;
+        // Display slide in view based on value of currentIndex
+        function showSlide() {
+            view.innerHTML = '';
+            const imgUrl = slides[currentIndex];
+            const img = document.createElement('img');
+            img.setAttribute('src', './images/' + imgUrl);
+            view.appendChild(img);
         }
-        showSlide();
-    }
 
-    function nextSlide() {
-        currentIndex++;
-        if (currentIndex === slides.length) {
-            currentIndex = 0;
+        
+        function prevSlide() {
+            currentIndex--;
+            if (currentIndex < 0) {
+                currentIndex = slides.length - 1;
+            }
+            showSlide();
         }
+
+        function nextSlide() {
+            currentIndex++;
+            if (currentIndex === slides.length) {
+                currentIndex = 0;
+            }
+            showSlide();
+        }
+
         showSlide();
-    }
 
-    showSlide();
-
-    rotation = setInterval(function() {
-        nextSlide();
-    }, 10000);
+        rotation = setInterval(function() {
+            nextSlide();
+        }, 10000);
 
     /* Front End "whatis" modal */
 
