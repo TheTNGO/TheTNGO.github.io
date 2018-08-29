@@ -37,6 +37,7 @@ header > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -340,9 +341,9 @@ img.project-screenshot {
     width: 320px;
 }
 
-#projects article{
+/* #projects article{
     max-block-size: 750px;
-}
+} */
 
 #projects h2{
     text-align: center;
@@ -406,6 +407,15 @@ img.project-screenshot {
     margin: 10px;
 }
 
+/* Post Grad Styles */
+
+section{
+    background-color: lightgrey;
+    border-radius: 1rem;
+    padding: 10px;
+    max-width: 700px;
+    margin: 3rem;
+}
 
 
 
