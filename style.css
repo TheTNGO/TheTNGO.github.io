@@ -124,6 +124,7 @@ header > * {
        /* General Styles */
 
             .tech-stack{
+                margin: 0px;
                 align-content: center;
             }
 
@@ -326,7 +327,6 @@ header > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 
 img.project-screenshot {
@@ -356,7 +356,7 @@ img.project-screenshot {
 .project-details{
     display: grid;
     
-    margin: 2rem 0.5rem;
+    margin: 2rem 0rem;
     
     grid-template-columns: 350px auto;
     grid-template-rows: auto;
@@ -417,7 +417,7 @@ img.project-screenshot {
 section{
     background-color: lightgrey;
     border-radius: 1rem;
-    padding: 10px;
+    padding: 2rem;
     max-width: 700px;
     margin: 3rem;
 }
