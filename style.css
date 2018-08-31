@@ -37,6 +37,7 @@ header > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
 }
 
@@ -139,9 +140,9 @@ header > * {
             .tech-stack-contents{
                 
                 display: grid;
-                grid-template-columns: 350px 350px;
+                grid-template-columns: auto auto;
                 
-                width: 700px;
+                max-width: 900px;
                 margin: 2rem auto;    
                 
             }
@@ -312,14 +313,8 @@ header > * {
     width: 80px;
 }
 
-
-
-
-
-
-
 /* End Projects Carousel */
-
+80
 /* Projects */
 
 .temp{
@@ -331,7 +326,7 @@ header > * {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 img.project-screenshot {
@@ -340,9 +335,9 @@ img.project-screenshot {
     width: 320px;
 }
 
-#projects article{
+/* #projects article{
     max-block-size: 750px;
-}
+} */
 
 #projects h2{
     text-align: center;
@@ -352,13 +347,19 @@ img.project-screenshot {
     display: none;
 }
 
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 .project-details{
     display: grid;
     
-    margin: 50px;
+    margin: 2rem 0.5rem;
     
-    grid-template-columns: 350px 750px;
-    grid-template-rows: 250px;
+    grid-template-columns: 350px auto;
+    grid-template-rows: auto;
 }
 
 #projects p{
@@ -395,6 +396,11 @@ img.project-screenshot {
 
 }
 
+.contact-intro{
+    display: flex;
+    align-items: center;
+}
+
 .contact-content{
     justify-items: left;
 }
@@ -406,6 +412,15 @@ img.project-screenshot {
     margin: 10px;
 }
 
+/* Post Grad Styles */
+
+section{
+    background-color: lightgrey;
+    border-radius: 1rem;
+    padding: 10px;
+    max-width: 700px;
+    margin: 3rem;
+}
 
 
 
